@@ -1,0 +1,52 @@
+% Lab 4 - Task 1
+% Unification Exercises
+
+% Query 1
+% car = car.
+% Result: true.
+% Explanation: Both terms are identical.
+
+% Query 2
+% car = bike.
+% Result: false.
+% Explanation: The atoms are different.
+
+% Query 3
+% link(x,y) = link(A,y).
+% Result: A = x.
+% Explanation: A can be unified with x.
+
+% Query 4
+% link(x,z) = link(A,B).
+% Result: A = x, B = z.
+% Explanation: Both variables can be instantiated.
+
+% Query 5
+% link(A,B) = link(x,z).
+% Result: A = x, B = z.
+% Explanation: Both terms can be unified.
+
+% Query 6
+% link(A,g(h,i)) = link(x,B).
+% Result: A = x, B = g(h,i).
+% Explanation: Both arguments can be unified.
+
+% Query 7
+% link(A,A) = link(x,y).
+% Result: false.
+% Explanation: A cannot be both x and y.
+
+% Query 8
+% link(A,A) = link(x,x).
+% Result: A = x.
+% Explanation: Both arguments have the same value.
+
+% Query 9
+% A = B, B = z.
+% Result: A = z, B = z.
+% Explanation: Both variables become z.
+
+% Query 10
+% A = B, B = z, A = w.
+% Result: false.
+% Explanation: A cannot be both z and w.

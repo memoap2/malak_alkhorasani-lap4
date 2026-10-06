@@ -1,0 +1,30 @@
+% Lab 4 - Task 2
+% Family Queries
+
+% Query 1: Show all females
+% ?- female(X).
+% X = lina ;
+% X = huda ;
+
+% Query 2: Check if there is any male
+% ?- male(_).
+% true.
+
+% Query 3: Find the grandparent of Omar
+% ?- parent(X,Y), parent(Y,omar).
+% X = hassan,
+% Y = khalid.
+
+% Query 4: Show all daughters of Hassan
+% ?- parent(hassan,X), female(X).
+% X = lina ;
+% X = huda ;
+% false.
+
+% Query 5: Find a common parent of Hassan and Khalid
+% ?- parent(X,hassan), parent(X,khalid).
+% X = salem.
+
+% Query 6: Check if Zaid is Huda's brother
+% ?- male(zaid), parent(X,zaid), parent(X,huda), zaid = huda.
+% true.
